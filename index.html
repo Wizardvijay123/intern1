@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <center>
+        <div class="balance">
+            <h2>HACKED DIVICES : </h2>
+            <h4 id="count"></h4>
+        </div>
+        <div class="details">
+            <p>under-control : </p>
+            <p id="onctrl"></p>
+            <p>out-of-control : </p>
+            <p id="notctrl"></p>
+        </div>
+        <div class="base">            
+                <table id="table">
+                    <caption>Recordes</caption>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>status</th>
+                            <th>number of packets </th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+        <div class="input">
+            <h3>Add New : </h3>
+            <div>
+                <label>Status : </label>
+                <select name="" id="status">
+                    <option value="">select status</option>
+                    <option value="under control">under-control</option>
+                    <option value="out of control">out-of-control</option>
+                </select>
+            </div>
+            <div>
+                <label for="">Name</label>
+                <input id="name" type="text" placeholder="enter device name">
+            </div>
+            <div>
+                <label for="">number of packets</label>
+                <input id="nofpack" type="number" placeholder="enter number of packets">
+            </div>
+            <!-- <input id="button" type="button" value="update"> -->
+             <button onclick="getinput()">update</button>
+        </div>
+    </center>
+</body>
+
+</html>
